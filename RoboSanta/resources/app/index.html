@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RoboSanta</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+             <div id ="game">
+
+             </div>
+    </section>
+
+    
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.4/phaser.min.js"></script>
+    <script src ="./public/javascript/game.js"></script>
+    <script>
+         var game = new Phaser.Game(800, 500, Phaser.Canvas, "game");
+         var cursors;
+
+         game.state.add("Play", Play);
+         game.state.start("Play");
+
+    </script>
+</body>
+</html>
